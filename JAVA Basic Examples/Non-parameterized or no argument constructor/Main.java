@@ -1,0 +1,15 @@
+import java.util.*;
+class sa{
+   int x;
+   sa()
+   {
+     x = 20;
+   }
+}
+class Main{
+   public static void main (String[] args) 
+   {
+      sa d = new sa();
+      System.out.println(d.x);
+   }
+}

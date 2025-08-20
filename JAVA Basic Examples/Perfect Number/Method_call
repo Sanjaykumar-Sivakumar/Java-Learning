@@ -1,0 +1,17 @@
+import java.util.*;
+class Main
+{
+		static int Volume_Cube(a)
+		{
+		    return a*a*a;
+		}
+		public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the input: ");
+		int a = sc.nextInt();
+		int cube = Volume_Cube();
+		System.out.println(cube);
+		}
+}
+		
+	
