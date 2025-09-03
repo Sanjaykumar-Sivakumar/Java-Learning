@@ -1,11 +1,15 @@
+
 import java.util.*;
+
 class MaxHeap {
+
     List<Integer> heap;
 
     public MaxHeap() {
         heap = new ArrayList<>();
     }
 // Insert into Max-Heap
+
     public void insert(int val) {
         heap.add(val);
         int i = heap.size() - 1;
@@ -21,6 +25,7 @@ class MaxHeap {
         }
     }
 // Print Heap as Array
+
     public String heapToString() {
         return heap.toString();
     }
@@ -35,10 +40,8 @@ class MaxHeap {
         preorder(2 * i + 2);
     }
 
-    public void inorder(int i) 
-        
-{
-if (i >= heap.size()) {
+    public void inorder(int i) {
+        if (i >= heap.size()) {
             return;
         }
         inorder(2 * i + 1);
@@ -62,7 +65,7 @@ public class MaxHeapInsertion {
         Scanner sc = new Scanner(System.in);
 // Input format
         System.out.println("Enter array input (like [\"3\",\"9\",\"20\",\"15\",\"7\"]):");
-String raw = sc.nextLine();
+        String raw = sc.nextLine();
 // Clean input
         String clean = raw.replace("[", "")
                 .replace("]", "")
