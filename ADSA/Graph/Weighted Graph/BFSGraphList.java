@@ -3,13 +3,11 @@ import java.util.*;
 class Edge {
     int dest;
     int weight;
-
     Edge(int dest, int weight) {
         this.dest = dest;
         this.weight = weight;
     }
 }
-
 public class BFSGraphList {
     private final Map<Integer, List<Edge>> adjList;
     private final boolean isDirected;
