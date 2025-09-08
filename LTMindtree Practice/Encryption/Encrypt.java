@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 public class Encrypt{
     public static StringBuffer encrypt(String text, int s)
     {
@@ -22,5 +25,14 @@ public class Encrypt{
         
         }
         return result;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String text = sc.nextLine();
+        int s = sc.nextInt();
+
+        StringBuffer encrypted = Encrypt.encrypt(text, s);
+        System.out.println("Original: " + text);
+        System.out.println("Encrypted: " + encrypted);
     }
 }
