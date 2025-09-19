@@ -164,7 +164,35 @@ class pattern {
             System.out.println();
         }
          System.out.println("----------------------");
-        //Left half Pyramid Pattern
+          //Left half Pyramid Pattern
+        for(int  i = 1;i<=r;i++)
+        {
+            for(int j = 1;j<=r - i;j++)   
+            {
+                System.out.print("  ");
+            }
+            for(int k = 1;k<=i;k++) 
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        System.out.println("----------------------");
+        //Left half reverse Pyramid Pattern
+        for(int  i = 1;i<=r;i++)
+        {
+            for(int j = 1;j<i;j++)   // 1<1 no 1<2 true 
+            {
+                System.out.print("  ");
+            }
+            for(int k = 1;k<=r - i+ 1;k++) // r - i + 1 "reverse" condition
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+             System.out.println("----------------------");
+        //Triangle Pyramid Pattern
         for(int  i = 1;i<=r;i++)
         {
             for(int j = 1;j<=r - i;j++)
