@@ -191,7 +191,7 @@ class pattern {
             }
             System.out.println();
         }
-             System.out.println("----------------------");
+        System.out.println("----------------------");
         //Triangle Pyramid Pattern
         for(int  i = 1;i<=r;i++)
         {
@@ -205,6 +205,40 @@ class pattern {
             }
             System.out.println();
         }
+        System.out.println("----------------------");
+        //Upper half
+        for(int i = 1;i<=r;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                if(i == 4 || j == 2 || j == 3)
+                {
+                    System.out.print("  ");
+                }
+                else
+                {
+                    System.out.print("* ");
+                }
+            }
+            System.out.println();
+        }
+        //Lower Half
+        for(int i =1 ;i<=r;i++)
+        {
+            for(int j = 2 ;j<=r - i + 1;j++)
+            {
+                if(i==5 || j == 2)
+                {
+                System.out.print("  ");
+                }
+                else
+                {
+                    System.out.print("* ");
+                }
+            }
+            System.out.println();
+        }
+
 
     }
 }
