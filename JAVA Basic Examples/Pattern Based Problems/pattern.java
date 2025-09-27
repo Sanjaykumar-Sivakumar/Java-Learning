@@ -216,17 +216,55 @@ class pattern {
         }
         System.out.println("----------------------");
         //Rhombus Pattern
-        for(int i = 1;i<=r;i++)
-        {
-            for(int j = 1;j<=r - i;j++)
-            {
+        for (int i = 1; i <= r; i++) {
+            for (int j = 1; j <= r - i; j++) {
                 System.out.print(" ");
             }
-            for(int j = 1;j<=i;j++)
-            {
+            for (int j = 1; j <= r; j++) {
                 System.out.print("*");
             }
             System.out.println();
         }
+        System.out.println("----------------------");
+        //Palindrome Triangle Pattern
+        //for spaces
+        for (int i = 1; i <= r; i++) {
+            for (int j = 1; j <= r - i; j++) {
+                System.out.print("  ");
+            }
+            //for decreasing pattern
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j + " ");
+            }
+            //for increasing pattern
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+        System.out.println("----------------------");
+        //Diamond Pattern 
+        for (int i = 1; i <= r; i++) {
+            for (int j = 1; j <= r - i; j++) {
+                System.out.print("  ");
+            }
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        //Inverted 
+        for (int i = r - 1; i >= 1; i--) {
+            // spaces before stars
+            for (int j = 1; j <= r - i; j++) {
+                System.out.print("  ");
+            }
+            // stars
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        
     }
 }
