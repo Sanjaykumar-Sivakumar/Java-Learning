@@ -265,6 +265,40 @@ class pattern {
             }
             System.out.println();
         }
-        
+        System.out.println("----------------------");
+        //Butterfly Pattern 
+        //upper star left
+        for (int i = 1; i <= r; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            //upper space 
+            for (int k = 1; k <= 2 * (r - i); k++) {
+                System.out.print(" ");
+            }
+            // upper stars right
+                for(int j = 1;j<=i;j++)
+                {
+                    System.out.print("*");
+                }
+                System.out.println();
+        }
+        //Inverted part of butterfly
+        //lower left stars
+        for (int i = 1; i<= r; i++) {
+            for (int j = 1; j <= r - i + 1; j++) {
+                System.out.print("*");
+            }
+            // spaces
+            for (int k = 1; k <=  (2 * i - 2);k++)
+             {
+                System.out.print(" ");
+            }
+            //lower right stars
+            for (int j = 1; j <= r - i + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
