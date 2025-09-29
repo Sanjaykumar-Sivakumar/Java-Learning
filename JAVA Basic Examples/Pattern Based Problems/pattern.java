@@ -300,5 +300,30 @@ class pattern {
             }
             System.out.println();
         }
+        System.out.println("----------------------");
+        //Mirror Image Triangle Pattern 
+        //upper part
+        //space printing
+        for (int i = 1; i <= r; i++) {
+            for (int j = 1; j <= i-1; j++) {
+                System.out.print(" ");
+            }
+            for (int k = i; k <= r; k++) {
+                System.out.print(k+" ");
+            }
+            System.out.println();
+        }
+        //Inverted part 
+        //lower space
+        for (int i = 1; i<r; i++) {
+            for (int j = 1; j <= r - i - 1; j++) {
+                System.out.print(" ");
+            }
+            for (int k = r - i; k <= r;k++) 
+             {
+                System.out.print(k+" ");
+            }
+            System.out.println();
+        }
     }
 }
